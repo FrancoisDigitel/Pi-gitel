@@ -21,8 +21,9 @@ echo "
 point-rpi
 @chromium-browser --start-fullscreen --start-maximized https://Google.com/
 
-" >> .config/lxsession/LXDE-pi/autostart
+" >> .config/lxsession/LXDE-pi/autostart 
 
 #change hdmi output 1 to left 
+#the oriantation needs to be set manualy in the interface using vnc or mous and keyboard
 
-DISPLAY=:0 xrandr --output HDMI-1 --rotate left
+DISPLAY=:0 xrandr --output HDMI-1 --rotate left #this command will only set the display to the left for this session until reboot
