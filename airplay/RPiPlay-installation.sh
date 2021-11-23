@@ -8,6 +8,7 @@
 #update pi os to newest version
 echo Installing updates 
 sudo apt update -y && sudo apt full-upgrade -y #this stepp can take time
+echo Done Installing updates!
 
 #Downloadeing RPiPlay
 echo gettings repo RPiPlay from github 
@@ -26,7 +27,7 @@ cd build
 cmake ..
 make -j
 
-echo done with building
+echo Done with building
 
 echo instaling RPiPlay
 sudo make install
