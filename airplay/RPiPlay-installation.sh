@@ -18,10 +18,10 @@ cd RPiPlay
 #Build RPiPlay
 echo building RPiPlay
 
-sudo apt-get install cmake
-sudo apt-get install libavahi-compat-libdnssd-dev
-sudo apt-get install libplist-dev
-sudo apt-get install libssl-dev
+sudo apt-get install cmake -y
+sudo apt-get install libavahi-compat-libdnssd-dev -y
+sudo apt-get install libplist-dev -y
+sudo apt-get install libssl-dev -y
 mkdir build
 cd build
 cmake ..
